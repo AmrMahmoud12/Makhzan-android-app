@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#091d89</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#303F9F</color>
+    <color name="loginBtn">#2ECC71</color>
+    <color name="txtColor">#000000</color>
+    <color name="names">#c94646</color>
+    <color name="cardviewbackground">#e9e9e9</color>
+    <color name="changePic">#878787</color>
+    <color name="Adnamecolor">#065794</color>
+    <color name="actionbarcolor">#3d170a</color>
+    <color name="darkctionbar">#582513</color>
+    <color name="trustedbc">#FFC23400</color>
+    <color name="emptytrusted">#FFC75E38</color>
+    <color name="itemcolor">#aaffe1e1</color>
+    <color name="separation">#f1f1f1</color>
+    <color name="follow">#387dc7</color>
+    <color name="unfollowcorner">#387dc7</color>
+    <color name="maintxt">#2b0d02</color>
+    <color name="choosephotobtn">#e62525</color>
+    <color name="createAdTexts">#000000</color>
+    <color name="defaultTextViewColor">#878787</color>
+    <color name="fadedgray">#e9e9e9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#f4f900</color>
+    <color name="green">#47e609</color>
+</resources>

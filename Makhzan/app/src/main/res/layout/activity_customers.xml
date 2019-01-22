@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomersActivity">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/relativlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+
+                app:srcCompat="@mipmap/launcher_round" />
+
+            <TextView
+                android:id="@+id/Compname"
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/imageView"
+                android:text="اسم الشركة"
+                android:textColor="@color/txtColor"
+    android:fontFamily="@font/shoroqfont"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Compaddress"
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Compname"
+                android:text="عنوان الشركه"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/followCust"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/loginbtn"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/txtColor"
+
+                    android:fontFamily="@font/shoroqfont"
+
+                    android:text="اضافة الى العملاء"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/unfollowCust"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/loginbtn"
+                    android:gravity="center"
+                    android:backgroundTint="@color/trustedbc"
+                    android:text=" حذف الشركة من العملاء"
+                    android:fontFamily="@font/shoroqfont"
+
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <ProgressBar
+                    android:id="@+id/CustomerProgress"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:indeterminateDrawable="@drawable/progressbarcircle"
+                    android:max="100"
+                    android:progress="1" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

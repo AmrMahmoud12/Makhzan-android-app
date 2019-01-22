@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/Order_Images"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/choose_photos"
+        android:fontFamily="@font/shoroqfont"
+        android:src="@drawable/picturebtn"
+        android:textColor="#000000"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/OrdersImagesRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </android.support.v7.widget.RecyclerView>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/orderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/orderNameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/shoroqfont"
+            android:hint="أكتب الأوردر المطلوب"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="10"
+            android:textColor="@color/txtColor"
+            >
+
+        </android.support.design.widget.TextInputEditText>
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:id="@+id/orderNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/orderName"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/conact"
+        android:fontFamily="@font/shoroqfont"
+        android:textColor="@color/txtColor"
+        android:inputType="phone"
+        android:background="@drawable/faded_background"
+        />
+
+
+
+
+        <Button
+            android:id="@+id/createOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/shoroqfont"
+            android:text="انشاء"
+            android:textColor="@color/txtColor"
+
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/cancelOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/shoroqfont"
+            android:text="الغاء"
+            android:textColor="@color/txtColor"
+
+            android:textSize="20sp" />
+
+
+</LinearLayout>

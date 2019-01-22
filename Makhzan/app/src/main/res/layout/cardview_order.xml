@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="10dp"
+    app:contentPaddingLeft="10dp"
+    app:contentPaddingRight="10dp"
+    app:contentPaddingBottom="10dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardBackgroundColor="@color/cardviewbackground"
+    app:ignore="NamespaceTypo">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/orderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="المطلوب"
+            android:maxLines="5"
+            android:fontFamily="@font/shoroqfont"
+            android:textColor="@color/txtColor"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/orderCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="اسم الشركه"
+            android:maxLines="5"
+            android:fontFamily="@font/shoroqfont"
+
+            android:textColor="@color/txtColor"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="00 "
+            android:maxLines="5"
+            android:fontFamily="@font/shoroqfont"
+
+            android:textColor="@color/txtColor"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/orderPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:gravity="center"
+            android:linksClickable="true"
+            android:text="00000000000"
+            android:fontFamily="@font/shoroqfont"
+
+            android:textColor="@color/txtColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/followCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginbtn"
+            android:backgroundTint="@color/trustedbc"
+            android:fontFamily="@font/shoroqfont"
+            android:gravity="center"
+            android:text=" صفحة  العميل "
+            android:textColor="@color/names"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

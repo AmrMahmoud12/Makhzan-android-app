@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    tools:context=".CreateAdFragment">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/rv_Images"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="361dp">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <ImageButton
+                android:id="@+id/choose_Images"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/choose_photos"
+                android:fontFamily="@font/shoroqfont"
+                android:src="@drawable/picturebtn"
+                android:textColor="#000000" />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:scaleType="center" />
+
+
+            <Button
+                android:id="@+id/btnOrder1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/loginbtn"
+                android:fontFamily="@font/shoroqfont"
+                android:text="اماكن التوزيع"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvItemSelected1"
+                style="@android:style/Widget.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btnOrder"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/faded_background"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/placeicon"
+                android:fontFamily="@font/shoroqfont"
+                android:gravity="center"
+                android:textColor="@color/defaultTextViewColor"
+
+                android:textSize="20dp" />
+            <TextView
+                android:fontFamily="@font/shoroqfont"
+                android:text="اختر عنوان لاعلانك"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/AdName1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/faded_background"
+                android:textSize="20sp"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/AdNametxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/shoroqfont"
+                    android:hint="عنوان الاعلان"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textColor="@color/createAdTexts"
+                    android:textSize="20sp">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:fontFamily="@font/shoroqfont"
+                android:text="ما هى بضاعتك؟"
+                android:textColor="#000000"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/AdDiscription1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/faded_background"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/AdDiscriptiontxt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/shoroqfont"
+
+            android:hint="وصف الاعلان"
+            android:inputType="textCapSentences|textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+
+            android:scrollbars="vertical"
+            android:textColor="@color/createAdTexts"
+            android:textSize="20sp">
+
+        </android.support.design.widget.TextInputEditText>
+    </android.support.design.widget.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/phoneNumber1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/faded_background"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/conact"
+                android:fontFamily="@font/shoroqfont"
+                android:inputType="phone"
+                android:textColor="@color/createAdTexts"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/CreatAdProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/mainImage"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progressbarcircle"
+                android:max="100"
+                android:progress="1" />
+
+            <Button
+                android:id="@+id/saveAdBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/loginbtn"
+                android:fontFamily="@font/shoroqfont"
+                android:textColor="@color/createAdTexts"
+
+                android:text="حفظ"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/cancelAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loginbtn"
+                android:fontFamily="@font/shoroqfont"
+                android:text="الغاء"
+                android:textColor="@color/createAdTexts"
+
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

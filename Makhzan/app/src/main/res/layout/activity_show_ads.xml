@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".MyAdsActivity"
+    android:orientation="vertical">
+<!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/searchText"-->
+    <!--android:drawablePadding="10dp"-->
+    <!--android:drawableRight="@drawable/searcicon"/>-->
+<!--<ImageButton-->
+    <!--android:id="@+id/searchbtn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/searcicon"/>-->
+<TextView
+    android:fontFamily="@font/shoroqfont"
+    android:textSize="25sp"
+    android:text="أعلاناتى"
+    android:textColor="@color/txtColor"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/Show_myAdsRV"
+    android:scrollbars="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+</android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

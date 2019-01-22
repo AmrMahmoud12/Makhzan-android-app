@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/itemcolor"
+    tools:context=".ContactToPayActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/payingtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:fontFamily="@font/shoroqfont"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/publicAdphone"
+        android:maxLines="200"
+
+        android:text="البيانات" />
+<TextView
+    android:text="رقم تليفون فودافون كاش"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/contactPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/payingtxt"
+            android:autoLink="phone"
+            android:fontFamily="@font/shoroqfont"
+            android:gravity="center"
+            android:linksClickable="true"
+            android:padding="5dp"
+            android:text="00000000000"
+            android:textSize="40sp" />
+<TextView
+    android:text="رقم تليفون خدمة العملاء"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <TextView
+    android:id="@+id/servicePhone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/payingtxt"
+    android:autoLink="phone"
+    android:fontFamily="@font/shoroqfont"
+    android:gravity="center"
+    android:linksClickable="true"
+    android:padding="5dp"
+    android:text="00000000000"
+    android:textSize="40sp" />
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+</RelativeLayout>

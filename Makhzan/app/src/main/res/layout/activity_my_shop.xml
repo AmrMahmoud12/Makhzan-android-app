@@ -1,0 +1,27 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myshopCoordinator"
+    tools:context=".MyShopActivity">
+
+    <include
+        android:id="@+id/bar_myshop"
+        layout="@layout/main_ads_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="67dp"
+        android:layout_height="71dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:clickable="true"
+android:backgroundTint="@color/yellow"
+        android:src="@drawable/shopping"
+        app:layout_anchorGravity="bottom|left|end" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditAdActivity">
+
+
+    <ScrollView
+        android:id="@+id/scroll_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/rv_Images"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="361dp">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+            <ImageView
+                android:id="@+id/image_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/choose_Images_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/addpic"
+                android:fontFamily="@font/shoroqfont"
+                android:text="اضافة صوره"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/remove_Images_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/removepic"
+                android:fontFamily="@font/shoroqfont"
+                android:text="حذف الصورة"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnOrder1_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/loginbtn"
+                android:fontFamily="@font/shoroqfont"
+                android:text="اماكن التوزيع"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvItemSelected1_edit"
+                style="@android:style/Widget.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnOrder"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/addaditem"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/placeicon"
+                android:fontFamily="@font/shoroqfont"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/AdName1_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/addaditem"
+
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/AdNametxt1_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/shoroqfont"
+                    android:hint="عنوان الاعلان"
+
+                    android:inputType="textCapSentences|textMultiLine">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/AdDiscription1_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/addaditem"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/AdDiscriptiontxt1_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/shoroqfont"
+                    android:hint="وصف الاعلان"
+                    android:inputType="textMultiLine"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+
+                    >
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/phoneNumber1_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/addaditem"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/conact"
+                android:fontFamily="@font/shoroqfont"
+
+                android:inputType="phone" />
+
+            <ProgressBar
+                android:id="@+id/EditAdProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainImage"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progressbarcircle"
+                android:max="100"
+                android:progress="1" />
+
+            <Button
+                android:id="@+id/saveAdBtn1_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/loginbtn"
+                android:fontFamily="@font/shoroqfont"
+                android:text="حفظ"
+
+                />
+
+            <Button
+                android:id="@+id/cancelAd_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loginbtn"
+                android:fontFamily="@font/shoroqfont"
+                android:text="الغاء"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

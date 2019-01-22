@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="10dp"
+    app:contentPaddingLeft="10dp"
+    app:contentPaddingRight="10dp"
+    app:contentPaddingBottom="10dp"
+
+
+    card_view:cardUseCompatPadding="false"
+    card_view:layout_scrollFlags="scroll">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageButton
+            android:visibility="invisible"
+            android:id="@+id/edit_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/editicon" />
+        <TextView
+            android:id="@+id/MyAdName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/adnameicon"
+            android:fontFamily="@font/shoroqfont"
+            android:text="اسم اعلانى"
+            android:textColor="@color/txtColor"
+            android:textSize="15sp" />
+
+
+
+        <TextView
+            android:id="@+id/MyAdDiscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ad_discription_icon"
+            android:fontFamily="@font/shoroqfont"
+            android:layout_marginRight="20dp"
+            android:maxLines="5"
+            android:text="وصف اعلانى"
+            android:textSize="15sp" />
+
+
+
+        <TextView
+            android:id="@+id/MyAdPlaces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/placeicon"
+            android:fontFamily="@font/shoroqfont"
+            android:maxLines="5"
+            android:layout_marginRight="20dp"
+
+            android:text="مناطق توزيعى للبضاعة"
+            android:textSize="15sp" />
+
+
+
+        <TextView
+            android:id="@+id/MyAdphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/conact"
+            android:fontFamily="@font/shoroqfont"
+            android:gravity="end"
+            android:layout_marginRight="20dp"
+
+            android:linksClickable="true"
+            android:text="00000000000"
+            android:textAlignment="textEnd"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/creationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ad_mydate_icon"
+            android:fontFamily="@font/shoroqfont"
+            android:gravity="end"
+            android:layout_marginRight="20dp"
+
+            android:textAlignment="textEnd"
+            android:textSize="15sp" />
+
+        <!--<Button-->
+        <!--android:id="@+id/publishAd"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="نشر"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="30dp" />-->
+    </LinearLayout>
+</android.support.v7.widget.CardView>

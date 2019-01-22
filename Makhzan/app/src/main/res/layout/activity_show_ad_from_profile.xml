@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShowAdFromProfileActivity"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/profileAdImagesRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="5dp">
+
+
+                </android.support.v7.widget.RecyclerView>
+                <com.kingfisher.easyviewindicator.RecyclerViewIndicator
+                    android:id="@+id/circleIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    app:avi_animation_enable="true"
+                    app:avi_drawable="@drawable/blue_radius"
+                    app:avi_drawable_unselected="@drawable/gray_radius"
+                    app:avi_height="10dp"
+                    app:avi_margin="10dp"
+                    app:avi_width="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerView">
+
+                </com.kingfisher.easyviewindicator.RecyclerViewIndicator>
+
+
+                <TextView
+                    android:id="@+id/SingleAd_CoName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/Ad_Picture"
+                    android:text="اسم الشركه"
+                    android:textColor="@color/txtColor"
+                    android:fontFamily="@font/shoroqfont"
+                    android:textAlignment="center"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+              <Button
+                  android:id="@+id/showFollowings"
+                  android:text="عرض جميع الشركات"
+                  android:textColor="@color/actionbarcolor"
+                  android:fontFamily="@font/shoroqfont"
+                  android:layout_margin="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/disrcibe_ad2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SingleAd_CoName"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/ad_discription_icon"
+                    android:maxLines="200"
+                    android:padding="10dp"
+                    android:text="وصف اعلانى"
+                    android:textColor="@color/txtColor"
+                    android:fontFamily="@font/shoroqfont"
+                    android:textSize="20sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separation" />
+
+                <TextView
+                    android:id="@+id/place_ad2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/disrcibe_ad"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/placeicon"
+                    android:padding="10dp"
+                    android:fontFamily="@font/shoroqfont"
+                    android:text="  التوزيع"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separation" />
+                <TextView
+                    android:id="@+id/phone2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/place_ad"
+                    android:autoLink="phone"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/conact"
+                    android:gravity="center_vertical"
+                    android:linksClickable="true"
+                    android:padding="10dp"
+                    android:fontFamily="@font/shoroqfont"
+                    android:text="00000000000"
+                    android:textAlignment="textEnd"
+                    android:textSize="20sp"
+                    android:textColor="@color/txtColor"
+
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>

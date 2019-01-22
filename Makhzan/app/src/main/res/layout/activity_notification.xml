@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NotificationActivity"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/Ad_PictureN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/loginbtn" />
+
+
+
+                <TextView
+                    android:id="@+id/SingleAd_CoNameN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/Ad_Picture"
+                    android:text="اسم الشركه"
+                    android:fontFamily="@font/shoroqfont"
+                    android:textColor="@color/txtColor"
+                    android:textAlignment="center"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#000000" />
+
+
+                <TextView
+                    android:id="@+id/disrcibe_adN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SingleAd_CoName"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/ad_discription_icon"
+                    android:maxLines="200"
+                    android:padding="10dp"
+                    android:text="وصف اعلانى"
+                    android:textColor="@color/txtColor"
+
+                    android:fontFamily="@font/shoroqfont"
+                    android:textSize="20sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:background="@color/separation" />
+
+                <TextView
+                    android:id="@+id/place_adN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/disrcibe_ad"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/placeicon"
+                    android:padding="10dp"
+                    android:fontFamily="@font/shoroqfont"
+                    android:textColor="@color/txtColor"
+
+                    android:text="  التوزيع"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separation" />
+                <TextView
+                    android:id="@+id/phoneN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/place_ad"
+                    android:autoLink="phone"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/conact"
+                    android:gravity="center_vertical"
+                    android:linksClickable="true"
+                    android:padding="10dp"
+                    android:fontFamily="@font/shoroqfont"
+                    android:text="00000000000"
+                    android:textAlignment="textEnd"
+                    android:textSize="20sp"
+                    android:textColor="@color/txtColor"
+
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>

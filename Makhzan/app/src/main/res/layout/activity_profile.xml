@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="@drawable/loginbtn">-->
+    <!--<TextView-->
+    <!--android:paddingRight="5dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="ادخل اسم شركتك"/>-->
+    <!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text=" "-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="عدد العاملين"-->
+    <!--/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/editText"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:ems="5"-->
+    <!--android:layout_gravity="end"-->
+    <!--android:inputType="number" />-->
+    <!--</LinearLayout>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profile" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_CoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_input_CoNametxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="اسم الشركه:"
+                    android:fontFamily="@font/shoroqfont"
+android:textColor="@color/txtColor"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_PersonaName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/PersonalNameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="كود الاعلانات (ادخل رمز خاص بك)"
+                    android:inputType="text"
+                    android:fontFamily="@font/shoroqfont"
+                    android:textColor="@color/txtColor"
+
+                    android:paddingBottom="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/addresstxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint=" العنوان :"
+                    android:fontFamily="@font/shoroqfont"
+                    android:textColor="@color/txtColor"
+
+                    android:inputType="text"
+                    android:paddingBottom="10dp" />
+            </android.support.design.widget.TextInputLayout>
+            <EditText
+                android:id="@+id/companyPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/conact"
+                android:fontFamily="@font/shoroqfont"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/saveInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/loginbtn"
+                android:fontFamily="@font/shoroqfont"
+                android:textColor="@color/txtColor"
+
+                android:text="حفظ" />
+
+            <Button
+                android:id="@+id/cancelInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/loginbtn"
+                android:text="الغاء"
+
+                android:visibility="gone"
+                android:textColor="@color/txtColor"
+                />
+
+            <ProgressBar
+                android:id="@+id/ProfileProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progressbarcircle"
+                android:max="100"
+                android:fontFamily="@font/shoroqfont"
+
+                android:progress="1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

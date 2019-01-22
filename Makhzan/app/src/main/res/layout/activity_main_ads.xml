@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainAdsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/bar"
+            layout="@layout/main_ads_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:id="@+id/MainAdsProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progressbarcircle"
+            android:max="100"
+            android:progress="1" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/CategoryAdsRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/publishAdBtn"
+
+            android:padding="5dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--<Button-->
+            <!--android:id="@+id/publishSpecialAdBtn"-->
+            <!--android:layout_width="129dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableRight="@drawable/specialad"-->
+            <!--android:fontFamily="@font/shoroqfont"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text=" اضافة اعلان متميز"-->
+            <!--android:visibility="invisible" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/publish_SpecialAdBtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableRight="@drawable/specialad"-->
+            <!--android:fontFamily="@font/shoroqfont"-->
+            <!--android:text="اجعل شركتك موثوقة"-->
+            <!--android:visibility="invisible" />-->
+        <Button
+            android:id="@+id/required_Orders"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/shoroqfont"
+            android:text="اضافة أوردر"
+            android:textColor="@color/white"
+            android:background="@drawable/adorder"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/publishAdBtn"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/shoroqfont"
+            android:paddingTop="10dp"
+            android:text=" اضافة اعلان"
+            android:background="@drawable/adad"
+            android:textColor="@color/createAdTexts"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

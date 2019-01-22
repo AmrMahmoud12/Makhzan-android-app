@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <TextView
+        android:id="@+id/CountryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/shoroqfont"
+        android:text="country name"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/txtColor"
+        android:background="@drawable/countryground"/>
+</android.support.v7.widget.CardView>

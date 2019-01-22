@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomersListActivity"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_margin="10dp"
+    android:text="قائمة العملاء"
+    android:gravity="center"
+    android:textSize="25sp"
+    android:textColor="@color/txtColor"
+    android:fontFamily="@font/shoroqfont"
+    android:drawableBottom="@color/cardviewbackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/Progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/progressbarcircle"
+        android:max="100"
+        android:progress="1" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/customersListRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

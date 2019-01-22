@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="10dp"
+    app:contentPaddingLeft="10dp"
+    app:contentPaddingRight="10dp"
+    app:contentPaddingBottom="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/cardviewbackground"
+
+    >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/edit_order"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/editicon" />-->
+        <TextView
+            android:id="@+id/orderTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="المطلوب"
+            android:maxLines="5"
+            android:fontFamily="@font/shoroqfont"
+            android:textColor="@color/txtColor"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/orderDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="00"
+            android:maxLines="5"
+            android:fontFamily="@font/shoroqfont"
+
+            android:textColor="@color/txtColor"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/orderPhone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:fontFamily="@font/shoroqfont"
+            android:gravity="center"
+            android:linksClickable="true"
+            android:text="00000000000"
+
+            android:textColor="@color/txtColor"
+            android:textSize="20sp" />
+        <!--<ImageButton-->
+            <!--android:id="@+id/delete_order"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/delete" />-->
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

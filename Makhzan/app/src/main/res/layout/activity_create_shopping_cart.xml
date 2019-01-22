@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateShoppingCartActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <include
+        android:id="@+id/include_create_shoppigcart"
+        layout="@layout/bar_createshoppingcart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/shopCartImagedRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageButton
+                android:id="@+id/choose_Images"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/choose_photos"
+                android:fontFamily="@font/shoroqfont"
+                android:src="@drawable/picturebtn"
+                android:textColor="#000000" />
+<Spinner
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+</Spinner>
+
+            <TextView
+                android:id="@+id/CategoryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/shoppingCartNamelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/shoppingCartNametxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/shoroqfont"
+                    android:hint="@string/shoppingCartName"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textColor="@color/createAdTexts"
+                    android:textSize="20sp">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/shoppingCartpricelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/shoppingCartNamelayout"
+
+                android:textSize="20sp"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/ks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/shoroqfont"
+                    android:hint="@string/shoppingCartprice"
+                    android:inputType="number"
+                    android:textColor="@color/createAdTexts"
+                    android:textSize="20sp">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!--<Button-->
+            <!--android:id="@+id/choose_sizePieces"-->
+            <!--android:text="count pieces"-->
+            <!--android:background="@color/white"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/size_pieces_TxtView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="textview" />-->
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+
+                >
+
+                <TableLayout
+                    android:id="@+id/table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="SIZE|"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PIECES"
+                            android:textSize="30sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/s"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="Small"
+                            android:textSize="@dimen/clothesSize" />
+
+                        <EditText
+                            android:id="@+id/s_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoText="false"
+                            android:fontFamily="cursive"
+                            android:inputType="number"
+                            android:textSize="@dimen/clothesSize" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="M"
+                            android:textSize="@dimen/clothesSize" />
+
+
+                        <EditText
+                            android:id="@+id/m_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoText="false"
+                            android:ems="10"
+                            android:fontFamily="cursive"
+                            android:inputType="number"
+                            android:textSize="@dimen/clothesSize" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="L"
+                            android:textSize="@dimen/clothesSize" />
+
+
+                        <EditText
+                            android:id="@+id/l_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoText="false"
+                            android:ems="10"
+                            android:fontFamily="cursive"
+                            android:inputType="number"
+                            android:textSize="@dimen/clothesSize" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/xl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="XL"
+                            android:textSize="@dimen/clothesSize" />
+
+
+                        <EditText
+                            android:id="@+id/xl_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="cursive"
+                            android:inputType="number"
+                            android:textSize="@dimen/clothesSize" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/xxl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="XXL"
+                            android:textSize="@dimen/clothesSize" />
+
+
+                        <EditText
+                            android:id="@+id/xxl_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="cursive"
+                            android:inputType="number"
+                            android:textSize="@dimen/clothesSize" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_below="@+id/table">
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/submitCardBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/green"
+                android:text="Submit"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

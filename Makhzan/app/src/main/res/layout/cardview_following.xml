@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/default_profile_pic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+
+                android:src="@drawable/makhzan" />
+
+            <TextView
+                android:id="@+id/followingName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/default_profile_pic"
+                android:fontFamily="@font/shoroqfont"
+                android:gravity="center"
+                android:textColor="@color/txtColor"
+                android:text="followingname"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dailyAdsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/follow"
+                android:fontFamily="@font/shoroqfont"
+                android:paddingEnd="20sp"
+                android:paddingStart="20sp"
+                android:text=" وارد اليوم"
+                android:textAlignment="center"
+                android:textColor="#fafafa"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/disable_adsNot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/dailyAdsBtn"
+                android:layout_toStartOf="@+id/unfollowBtn"
+                android:paddingEnd="20sp"
+                android:paddingStart="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/maintxt"
+                android:fontFamily="@font/shoroqfont"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:text="الغاء الاشعارات" />
+
+            <TextView
+                android:id="@+id/enable_adsNot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/dailyAdsBtn"
+                android:layout_toStartOf="@+id/unfollowBtn"
+                android:fontFamily="@font/shoroqfont"
+                android:paddingEnd="20sp"
+                android:paddingStart="20sp"
+                android:text="تفعيل الاشعارات"
+                android:textAlignment="center"
+                android:textColor="@color/maintxt"
+                android:visibility="gone"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/unfollowBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/shoroqfont"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text=" حذف الشركة"
+                android:textAlignment="center"
+                android:textColor="#000000"
+
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

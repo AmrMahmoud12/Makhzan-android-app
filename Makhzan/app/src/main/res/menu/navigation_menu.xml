@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single"
+        >
+        <item android:title="دعوة الأصدقاء"
+            android:id="@+id/invite"
+            android:iconTint="@color/darkctionbar"
+            android:icon="@drawable/customers"
+            />
+
+        <item
+            android:id="@+id/new_account"
+            android:icon="@drawable/profile"
+            android:title="بيانات شركتى" />
+
+
+
+        <item android:title="My Store">
+            <menu>
+                <item
+                    android:id="@+id/MyShop"
+                    android:icon="@drawable/shopping"
+                    android:iconTint="@color/fadedgray"
+                    android:title="@string/my_shop"/>
+                <item
+                    android:id="@+id/ShowAds"
+                    android:icon="@drawable/e3lanati"
+                    android:title="  الاعلانات" />
+                <item
+                    android:id="@+id/ShowOrders"
+                    android:icon="@drawable/orders"
+                    android:title="  الأوردرات " />
+                <item
+                    android:id="@+id/FollowinglList"
+                    android:icon="@drawable/followinglist"
+                    android:title=" الموردين" />
+                <item
+                    android:id="@+id/CustomersList"
+                    android:icon="@drawable/customers"
+                    android:title=" العملاء" />
+            </menu>
+        </item>
+    </group>
+    <item android:title="Others">
+        <menu>
+
+            <item
+                android:id="@+id/new_settings"
+                android:icon="@drawable/settings"
+                android:title="اعدادات" />
+            <item
+                android:id="@+id/contact"
+                android:icon="@drawable/conact"
+                android:title="اتصل بنا" />
+            <item
+                android:id="@+id/new_logout"
+                android:icon="@drawable/logout"
+                android:title="تسجيل خروج" />
+        </menu>
+    </item>
+
+</menu>

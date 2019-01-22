@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CreateAdDrawable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+
+    tools:context=".CreateAddActivity">
+    <!--<ProgressBar-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:id="@+id/progressbar"-->
+    <!--style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_above="@+id/scroll"-->
+    <!--/>-->
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/AdName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/loginbtn"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/AdNametxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/adnameicon"
+                    android:gravity="center"
+                    android:hint="عنوان الاعلان"
+                    android:fontFamily="@font/shoroqfont"
+
+                    android:inputType="textCapSentences|textMultiLine">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/activityspinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+            </Spinner>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/AdDiscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/loginbtn"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/AdDiscriptiontxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+
+                    android:gravity="top"
+                    android:hint="وصف الاعلان"
+                    android:inputType="textCapSentences|textMultiLine">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/positivebtn"
+                android:text="اماكن التوزيع"
+                android:textColor="@color/names" />
+
+            <TextView
+                android:id="@+id/tvItemSelected"
+                style="@android:style/Widget.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnOrder"
+                android:layout_marginBottom="40sp"
+                android:background="@drawable/loginbtn"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/placeicon"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/conact"
+                android:inputType="phone" />
+            <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/phoneNumber"-->
+            <!--android:inputType="phone"-->
+            <!--&gt;-->
+
+
+            <!--</EditText>-->
+
+            <Button
+                android:id="@+id/saveAdBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/positivebtn"
+                android:text="حفظ"
+                android:textColor="@color/names" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/loginbtn"
+                android:text="الغاء"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.v4.widget.DrawerLayout>

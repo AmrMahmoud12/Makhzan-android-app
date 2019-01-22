@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OneFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ViewFlipper
+                android:id="@+id/imgBanner"
+                android:layout_width="match_parent"
+                android:layout_height="107dp">
+
+
+            </ViewFlipper>
+
+            <ProgressBar
+                android:id="@+id/MainActivityProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="45dp"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progressbarcircle"
+                android:max="100"
+                android:progress="1" />
+
+            <TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Categories"
+                android:padding="10dp"
+                android:typeface="monospace"
+                android:background="@color/fadedgray"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/MainCategoriesRV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
