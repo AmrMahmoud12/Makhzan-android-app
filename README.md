@@ -28,8 +28,6 @@ Android application allow companies to pull and push daily bulk advertisements
 * Updated are randomized between github and google app so don't be afraid . the full working version is on google app.
 * Some files are not included in the working app views, but it is commented in the codes. 
 
-**Link of application:**
-* https://play.google.com/store/apps/details?id=com.makhzan.amr.makhzan&hl=en
 
 **Contact with me at:**
 * ammah246@gmail.com
